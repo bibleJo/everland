@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $('#header_banner_close').click(function(){
+        $('#header_slide').slideUp()
+    })
+    $('#slide_bt>ul>li').click(function(){
+        $(this).css({'background-color':'#ff7126','opacity':'1'}).siblings().css({'background-color':'#fff','opacity':'0.6'})
+        $('#slide_box').animate({'left':$(this).index()*-100+'%'})
+    })
+})
